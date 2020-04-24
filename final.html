@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mr.Phommasone SANGKEO</h1>
+    <p id="Final"></p>
+</body>
+</html>
+<script src="jquery-3.4.1.js"></script>
+<script>
+    $(document).keydown(function(e){
+
+        switch(e.which){
+            case 76: $("#Final").html("<h2> Lao </h2>");
+            break;
+            case 84: $("#Final").html("<h2> Top </h2>");
+            break;
+            case 67: $("#Final").html("<h2> College </h2>");
+            break;
+            default: $("#Final").html(e.which =  "<h3> Lao-Top College </h3>" );
+        }
+    });
+</script>
